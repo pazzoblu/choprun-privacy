@@ -1,0 +1,156 @@
+<title>Chop & Run — Cancellazione dati</title>
+<meta name="description" content="Come richiedere l'eliminazione dei tuoi dati dal gioco Chop & Run: Zombie Road.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700&display=swap">
+<style>
+  :root{
+    --bg:#f6f1ea; --panel:#fffdf9; --ink:#211a26; --muted:#6b6070;
+    --line:#e4d9cc; --accent:#d1451f; --accent-2:#5c9a2a; --chip-bg:#211a26; --chip-ink:#f6f1ea;
+    --shadow:0 1px 0 #efe7db, 0 18px 40px -28px rgba(33,26,38,.45);
+  }
+  :root:not([data-theme="light"]){ @media (prefers-color-scheme: dark){
+    :root{ --bg:#141019; --panel:#1d1725; --ink:#ece6f1; --muted:#a99fb4; --line:#2f2739;
+      --accent:#ff7a4d; --accent-2:#8fd15a; --chip-bg:#ff7a4d; --chip-ink:#171019;
+      --shadow:0 0 0 1px #241d2e, 0 24px 50px -30px rgba(0,0,0,.7); } } }
+  :root[data-theme="dark"]{ --bg:#141019; --panel:#1d1725; --ink:#ece6f1; --muted:#a99fb4; --line:#2f2739;
+    --accent:#ff7a4d; --accent-2:#8fd15a; --chip-bg:#ff7a4d; --chip-ink:#171019;
+    --shadow:0 0 0 1px #241d2e, 0 24px 50px -30px rgba(0,0,0,.7); }
+  *{box-sizing:border-box}
+  body{background:var(--bg); color:var(--ink); margin:0; padding:0 20px 72px;
+    font-family:"Libre Franklin", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    line-height:1.62; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:720px; margin:0 auto}
+  header{padding:56px 0 26px; border-bottom:1px solid var(--line)}
+  .brand{display:inline-block; font-family:"Press Start 2P", monospace; font-size:11px; line-height:1.5;
+    letter-spacing:.5px; color:var(--chip-ink); background:var(--chip-bg); padding:9px 12px; border-radius:7px;
+    box-shadow:0 3px 0 rgba(0,0,0,.28);}
+  .brand span{color:var(--accent)}
+  h1{font-size:clamp(26px,5.5vw,36px); line-height:1.12; margin:22px 0 10px; font-weight:700; letter-spacing:-.01em; text-wrap:balance}
+  .sub{color:var(--muted); font-size:15px; margin:0}
+  .meta{display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; margin-top:20px; font-size:13.5px; color:var(--muted)}
+  .toggle{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-left:auto}
+  .toggle button{font:inherit; font-size:13px; font-weight:600; cursor:pointer; border:0; padding:7px 14px; background:transparent; color:var(--muted)}
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:#fff}
+  .toggle button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  section{padding:28px 0; border-bottom:1px solid var(--line)} section:last-of-type{border-bottom:0}
+  .eyebrow{font-size:12px; text-transform:uppercase; letter-spacing:.14em; color:var(--accent); font-weight:700; margin:0 0 6px}
+  h2{font-size:20px; font-weight:700; margin:0 0 12px; letter-spacing:-.01em; text-wrap:balance}
+  p{margin:0 0 14px} p:last-child{margin-bottom:0}
+  a{color:var(--accent); text-underline-offset:2px}
+  ol{margin:0; padding-left:22px; display:grid; gap:10px} ol li{padding-left:4px}
+  ul{margin:0; padding-left:0; list-style:none; display:grid; gap:10px}
+  ul li{position:relative; padding-left:26px}
+  ul li::before{content:""; position:absolute; left:6px; top:.62em; width:8px; height:8px; background:var(--accent-2); border-radius:2px; transform:rotate(45deg)}
+  b{font-weight:600}
+  .lead{font-size:17px}
+  .box{margin-top:22px; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; box-shadow:var(--shadow)}
+  .box a{font-weight:600}
+  footer{color:var(--muted); font-size:13px; padding-top:24px; text-align:center}
+  .backlink{font-size:13px}
+  [hidden]{display:none !important}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">CHOP &amp; RUN<br><span>ZOMBIE ROAD</span></div>
+    <h1 data-it="Eliminazione dei dati" data-en="Data deletion">Eliminazione dei dati</h1>
+    <p class="sub" data-it="Come richiedere la cancellazione dei tuoi dati di gioco." data-en="How to request deletion of your game data.">Come richiedere la cancellazione dei tuoi dati di gioco.</p>
+    <div class="meta">
+      <span data-it="App: Chop &amp; Run: Zombie Road (Android)" data-en="App: Chop &amp; Run: Zombie Road (Android)">App: Chop &amp; Run: Zombie Road (Android)</span>
+      <div class="toggle" role="group" aria-label="Lingua / Language">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div data-block="it">
+      <section>
+        <p class="lead">Questa pagina spiega come chiedere l'<b>eliminazione dei dati</b> associati al tuo profilo del gioco <b>Chop &amp; Run: Zombie Road</b>. Il gioco usa un <b>account anonimo</b> (nessuna email o password), quindi per identificarti ci serve il tuo <b>nickname</b> di gioco.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Come richiederla</p>
+        <h2>Passaggi</h2>
+        <ol>
+          <li>Invia un'email a <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a>.</li>
+          <li>Nell'oggetto scrivi <b>"Cancellazione dati – Chop &amp; Run"</b>.</li>
+          <li>Indica il <b>nickname</b> che usi nel gioco (lo vedi nella schermata iniziale e nelle impostazioni).</li>
+        </ol>
+        <p>Elaboriamo la richiesta e cancelliamo i dati <b>entro 30 giorni</b>, confermandotelo via email.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Cosa viene eliminato</p>
+        <h2>Dati cancellati</h2>
+        <ul>
+          <li>L'<b>account anonimo</b> e il collegamento al dispositivo.</li>
+          <li>Il <b>nickname</b>.</li>
+          <li><b>Punteggi, record, monete e progressi</b> salvati sul cloud.</li>
+        </ul>
+        <p>Dopo la cancellazione <b>non conserviamo</b> questi dati. Nota: gli <b>acquisti</b> sono gestiti da <b>Google Play</b> e i relativi record restano soggetti alle norme di Google, indipendentemente da noi.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contatto</b></p>
+          <p style="margin:0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-it="← Informativa sulla privacy" data-en="← Privacy policy">← Informativa sulla privacy</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="en" hidden>
+      <section>
+        <p class="lead">This page explains how to request <b>deletion of the data</b> tied to your profile in <b>Chop &amp; Run: Zombie Road</b>. The game uses an <b>anonymous account</b> (no email or password), so to identify you we need your in-game <b>nickname</b>.</p>
+      </section>
+      <section>
+        <p class="eyebrow">How to request</p>
+        <h2>Steps</h2>
+        <ol>
+          <li>Send an email to <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a>.</li>
+          <li>Use the subject <b>"Data deletion – Chop &amp; Run"</b>.</li>
+          <li>Include the <b>nickname</b> you use in the game (shown on the home screen and in settings).</li>
+        </ol>
+        <p>We process the request and delete the data <b>within 30 days</b>, confirming by email.</p>
+      </section>
+      <section>
+        <p class="eyebrow">What is deleted</p>
+        <h2>Deleted data</h2>
+        <ul>
+          <li>The <b>anonymous account</b> and its link to the device.</li>
+          <li>The <b>nickname</b>.</li>
+          <li><b>Scores, high scores, coins and progress</b> stored in the cloud.</li>
+        </ul>
+        <p>After deletion we <b>do not retain</b> this data. Note: <b>purchases</b> are handled by <b>Google Play</b> and those records remain subject to Google's policies, independently of us.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contact</b></p>
+          <p style="margin:0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html">← Privacy policy</a></p>
+        </div>
+      </section>
+    </div>
+
+    <footer>© 2026 Chop &amp; Run: Zombie Road · gltucceri@gmail.com</footer>
+  </main>
+</div>
+
+<script>
+  (function(){
+    var buttons = document.querySelectorAll('.toggle button');
+    var swap = document.querySelectorAll('[data-it]');
+    function apply(lang){
+      document.querySelector('[data-block="it"]').hidden = (lang !== 'it');
+      document.querySelector('[data-block="en"]').hidden = (lang !== 'en');
+      swap.forEach(function(el){ el.innerHTML = el.getAttribute('data-' + lang); });
+      buttons.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+      document.documentElement.lang = lang;
+      try{ localStorage.setItem('choprun_lang', lang); }catch(e){}
+    }
+    buttons.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.lang); }); });
+    var saved = 'it';
+    try{ saved = localStorage.getItem('choprun_lang') || 'it'; }catch(e){}
+    apply(saved);
+  })();
+</script>
