@@ -1,0 +1,263 @@
+<title>Chop & Run Privacy</title>
+<meta name="description" content="Informativa sulla privacy del gioco Chop & Run: Zombie Road.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+  :root{
+    --bg:#f6f1ea; --panel:#fffdf9; --ink:#211a26; --muted:#6b6070;
+    --line:#e4d9cc; --accent:#d1451f; --accent-2:#5c9a2a;
+    --chip-bg:#211a26; --chip-ink:#f6f1ea;
+    --shadow:0 1px 0 #efe7db, 0 18px 40px -28px rgba(33,26,38,.45);
+  }
+  :root:not([data-theme="light"]){
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#141019; --panel:#1d1725; --ink:#ece6f1; --muted:#a99fb4;
+        --line:#2f2739; --accent:#ff7a4d; --accent-2:#8fd15a;
+        --chip-bg:#ff7a4d; --chip-ink:#171019;
+        --shadow:0 0 0 1px #241d2e, 0 24px 50px -30px rgba(0,0,0,.7);
+      }
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141019; --panel:#1d1725; --ink:#ece6f1; --muted:#a99fb4;
+    --line:#2f2739; --accent:#ff7a4d; --accent-2:#8fd15a;
+    --chip-bg:#ff7a4d; --chip-ink:#171019;
+    --shadow:0 0 0 1px #241d2e, 0 24px 50px -30px rgba(0,0,0,.7);
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Libre Franklin", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    line-height:1.62; margin:0; padding:0 20px 72px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto}
+  header{padding:56px 0 28px; border-bottom:1px solid var(--line)}
+  .brand{
+    display:inline-block; font-family:"Press Start 2P", monospace;
+    font-size:11px; line-height:1.5; letter-spacing:.5px;
+    color:var(--chip-ink); background:var(--chip-bg);
+    padding:9px 12px; border-radius:7px; box-shadow:0 3px 0 rgba(0,0,0,.28);
+  }
+  .brand span{color:var(--accent)}
+  h1{
+    font-size:clamp(28px, 6vw, 40px); line-height:1.1; margin:22px 0 10px;
+    font-weight:700; letter-spacing:-.01em; text-wrap:balance;
+  }
+  .sub{color:var(--muted); font-size:15px; margin:0}
+  .meta{
+    display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center;
+    margin-top:22px; font-size:13.5px; color:var(--muted);
+  }
+  .meta b{color:var(--ink); font-weight:600}
+  .toggle{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-left:auto}
+  .toggle button{
+    font:inherit; font-size:13px; font-weight:600; cursor:pointer;
+    border:0; padding:7px 14px; background:transparent; color:var(--muted);
+  }
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:#fff}
+  .toggle button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  main{padding-top:8px}
+  section{padding:30px 0; border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  .eyebrow{
+    font-size:12px; text-transform:uppercase; letter-spacing:.14em;
+    color:var(--accent); font-weight:700; margin:0 0 6px;
+  }
+  h2{font-size:20px; font-weight:700; margin:0 0 12px; letter-spacing:-.01em; text-wrap:balance}
+  p{margin:0 0 14px} p:last-child{margin-bottom:0}
+  a{color:var(--accent); text-underline-offset:2px}
+  ul{margin:0 0 4px; padding-left:0; list-style:none; display:grid; gap:10px}
+  li{position:relative; padding-left:26px}
+  li::before{
+    content:""; position:absolute; left:6px; top:.62em; width:8px; height:8px;
+    background:var(--accent-2); border-radius:2px; transform:rotate(45deg);
+  }
+  li b{font-weight:600}
+  .lead{font-size:17px}
+  .contact{
+    margin-top:26px; background:var(--panel); border:1px solid var(--line);
+    border-radius:12px; padding:22px 24px; box-shadow:var(--shadow);
+  }
+  .contact a{font-weight:600}
+  footer{color:var(--muted); font-size:13px; padding-top:26px; text-align:center}
+  [hidden]{display:none !important}
+  @media (prefers-reduced-motion:no-preference){ .toggle button{transition:background .15s, color .15s} }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">CHOP &amp; RUN<br><span>ZOMBIE ROAD</span></div>
+    <h1 data-it="Informativa sulla privacy" data-en="Privacy Policy">Informativa sulla privacy</h1>
+    <p class="sub" data-it="Come il gioco tratta i tuoi dati." data-en="How the game handles your data.">Come il gioco tratta i tuoi dati.</p>
+    <div class="meta">
+      <span><b data-it="In vigore dal:" data-en="Effective:">In vigore dal:</b> <span data-it="11 settembre 2026" data-en="11 September 2026">11 settembre 2026</span></span>
+      <span data-it="App: Chop &amp; Run: Zombie Road (Android)" data-en="App: Chop &amp; Run: Zombie Road (Android)">App: Chop &amp; Run: Zombie Road (Android)</span>
+      <div class="toggle" role="group" aria-label="Lingua / Language">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ITALIANO -->
+    <div data-block="it">
+      <section>
+        <p class="lead">Questa informativa spiega quali dati raccoglie il gioco <b>Chop &amp; Run: Zombie Road</b>, perché e come puoi controllarli. Il gioco è pensato per divertirti raccogliendo dati al minimo indispensabile: <b>non chiediamo né conserviamo email o password</b> dei giocatori.</p>
+      </section>
+      <section>
+        <p class="eyebrow">1 · Dati che raccogliamo</p>
+        <h2>Cosa trattiamo</h2>
+        <ul>
+          <li><b>Account anonimo:</b> un identificativo casuale creato in automatico, senza nome, email o password.</li>
+          <li><b>Nickname:</b> il nome di gioco che scegli tu (verificato per l'unicità tra i giocatori).</li>
+          <li><b>Dati di gioco:</b> punteggi, record, monete, progressi e impostazioni, sincronizzati sul cloud così li ritrovi sui tuoi dispositivi.</li>
+          <li><b>Identificatore pubblicitario:</b> gestito dai servizi di annunci del dispositivo (vedi punto 4).</li>
+          <li><b>Dati tecnici essenziali:</b> informazioni di base sul dispositivo che i servizi che usiamo possono raccogliere per far funzionare gioco e annunci.</li>
+        </ul>
+      </section>
+      <section>
+        <p class="eyebrow">2 · Finalità</p>
+        <h2>Perché li usiamo</h2>
+        <p>Per far funzionare il gioco e salvare i tuoi progressi, per gestire classifiche e unicità del nickname, per mostrare pubblicità che sostiene lo sviluppo e per gestire eventuali acquisti in-app. Non vendiamo i tuoi dati.</p>
+      </section>
+      <section>
+        <p class="eyebrow">3 · Servizi di terze parti</p>
+        <h2>Con chi li condividiamo</h2>
+        <ul>
+          <li><b>Supabase</b> — archiviazione sicura di account anonimo, nickname e dati di gioco.</li>
+          <li><b>Google AdMob</b> — pubblicità nel gioco. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Norme di Google</a>.</li>
+          <li><b>Google Play Billing</b> — gestione degli acquisti in-app.</li>
+        </ul>
+        <p>Ognuno tratta i dati secondo le proprie informative; usiamo solo il necessario a fornire il servizio.</p>
+      </section>
+      <section>
+        <p class="eyebrow">4 · Pubblicità</p>
+        <h2>Annunci</h2>
+        <p>Il gioco mostra annunci tramite <b>Google AdMob</b>, che può usare l'<b>identificatore pubblicitario</b> del dispositivo per proporre annunci e misurarne il rendimento. Nello Spazio Economico Europeo e nel Regno Unito ti viene chiesto il <b>consenso</b> prima degli annunci personalizzati. Puoi reimpostare o limitare l'identificatore pubblicitario dalle impostazioni Google del telefono.</p>
+      </section>
+      <section>
+        <p class="eyebrow">5 · Acquisti in-app</p>
+        <h2>Pagamenti</h2>
+        <p>Gli acquisti facoltativi (pacchetti di monete e sostegno allo sviluppatore) sono gestiti da <b>Google Play</b>. I dati di pagamento sono trattati da Google: <b>noi non vediamo né conserviamo</b> numeri di carta o dati bancari.</p>
+      </section>
+      <section>
+        <p class="eyebrow">6 · Base giuridica &amp; diritti</p>
+        <h2>GDPR</h2>
+        <p>Trattiamo i dati per il <b>legittimo interesse</b> a far funzionare e migliorare il gioco e, per gli annunci personalizzati nell'UE/UK, sulla base del tuo <b>consenso</b>. Hai diritto di accedere, correggere o <b>cancellare</b> i tuoi dati e di revocare il consenso: scrivici all'indirizzo in fondo alla pagina.</p>
+      </section>
+      <section>
+        <p class="eyebrow">7 · Conservazione &amp; minori</p>
+        <h2>Tempi e età</h2>
+        <p>Conserviamo i dati di gioco finché usi il gioco o finché non chiedi la cancellazione. Il gioco contiene azione e nemici stilizzati (zombie) in stile pixel e <b>non è rivolto a bambini</b> sotto i 13 anni; non raccogliamo consapevolmente dati di minori.</p>
+      </section>
+      <section>
+        <p class="eyebrow">8 · Legge applicabile</p>
+        <h2>Foro competente</h2>
+        <p>La presente informativa è regolata dalla legge italiana. Per qualsiasi controversia relativa al gioco o a questa informativa, il <b>foro competente in via esclusiva è il Tribunale di Sulmona (AQ), Italia</b>.</p>
+      </section>
+      <section>
+        <p class="eyebrow">9 · Sicurezza &amp; modifiche</p>
+        <h2>Protezione e aggiornamenti</h2>
+        <p>Adottiamo misure ragionevoli per proteggere i dati. Potremmo aggiornare questa informativa: la data "in vigore dal" in alto indica l'ultima versione; le modifiche rilevanti saranno segnalate nel gioco o qui.</p>
+        <div class="contact">
+          <p style="margin:0 0 4px"><b data-it="Contatti" data-en="Contact">Contatti</b></p>
+          <p style="margin:0" data-it="Per domande sulla privacy o per richiedere la cancellazione dei dati:" data-en="For privacy questions or data deletion requests:">Per domande sulla privacy o per richiedere la cancellazione dei dati:</p>
+          <p style="margin:6px 0 0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+        </div>
+      </section>
+    </div>
+
+    <!-- ENGLISH -->
+    <div data-block="en" hidden>
+      <section>
+        <p class="lead">This policy explains what data the game <b>Chop &amp; Run: Zombie Road</b> collects, why, and how you can control it. The game is designed to keep data collection to a minimum: <b>we never ask for or store players' email or password</b>.</p>
+      </section>
+      <section>
+        <p class="eyebrow">1 · Data we collect</p>
+        <h2>What we process</h2>
+        <ul>
+          <li><b>Anonymous account:</b> a random identifier created automatically — no name, email or password.</li>
+          <li><b>Nickname:</b> the in-game name you choose (checked for uniqueness across players).</li>
+          <li><b>Gameplay data:</b> scores, high scores, coins, progress and settings, synced to the cloud so they follow your devices.</li>
+          <li><b>Advertising identifier:</b> handled by the device's ad services (see section 4).</li>
+          <li><b>Essential technical data:</b> basic device information the services we use may collect to run the game and ads.</li>
+        </ul>
+      </section>
+      <section>
+        <p class="eyebrow">2 · Purpose</p>
+        <h2>Why we use it</h2>
+        <p>To run the game and save your progress, to manage leaderboards and nickname uniqueness, to show ads that support development, and to handle any in-app purchases. We do not sell your data.</p>
+      </section>
+      <section>
+        <p class="eyebrow">3 · Third-party services</p>
+        <h2>Who we share it with</h2>
+        <ul>
+          <li><b>Supabase</b> — secure storage of anonymous account, nickname and gameplay data.</li>
+          <li><b>Google AdMob</b> — in-game advertising. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's policy</a>.</li>
+          <li><b>Google Play Billing</b> — handling in-app purchases.</li>
+        </ul>
+        <p>Each processes data under its own policy; we use only what's needed to provide the service.</p>
+      </section>
+      <section>
+        <p class="eyebrow">4 · Advertising</p>
+        <h2>Ads</h2>
+        <p>The game shows ads through <b>Google AdMob</b>, which may use the device's <b>advertising identifier</b> to serve ads and measure performance. In the European Economic Area and the UK you are asked for <b>consent</b> before personalized ads. You can reset or limit the advertising identifier in your phone's Google settings.</p>
+      </section>
+      <section>
+        <p class="eyebrow">5 · In-app purchases</p>
+        <h2>Payments</h2>
+        <p>Optional purchases (coin packs and developer support) are handled by <b>Google Play</b>. Payment data is processed by Google: <b>we never see or store</b> card numbers or banking details.</p>
+      </section>
+      <section>
+        <p class="eyebrow">6 · Legal basis &amp; rights</p>
+        <h2>GDPR</h2>
+        <p>We process data under our <b>legitimate interest</b> in running and improving the game and, for personalized ads in the EU/UK, on your <b>consent</b>. You may access, correct or <b>delete</b> your data and withdraw consent — contact us at the address below.</p>
+      </section>
+      <section>
+        <p class="eyebrow">7 · Retention &amp; children</p>
+        <h2>Timing and age</h2>
+        <p>We keep gameplay data while you use the game or until you request deletion. The game contains stylized pixel action and enemies (zombies) and is <b>not directed to children</b> under 13; we do not knowingly collect data from children.</p>
+      </section>
+      <section>
+        <p class="eyebrow">8 · Governing law</p>
+        <h2>Jurisdiction</h2>
+        <p>This policy is governed by Italian law. For any dispute relating to the game or this policy, the <b>courts of Sulmona (AQ), Italy have exclusive jurisdiction</b>.</p>
+      </section>
+      <section>
+        <p class="eyebrow">9 · Security &amp; changes</p>
+        <h2>Protection and updates</h2>
+        <p>We take reasonable measures to protect data. We may update this policy: the "Effective" date at the top marks the latest version; significant changes will be noted in the game or here.</p>
+        <div class="contact">
+          <p style="margin:0 0 4px"><b>Contact</b></p>
+          <p style="margin:0">For privacy questions or data deletion requests:</p>
+          <p style="margin:6px 0 0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+        </div>
+      </section>
+    </div>
+
+    <footer>© 2026 Chop &amp; Run: Zombie Road · gltucceri@gmail.com</footer>
+  </main>
+</div>
+
+<script>
+  (function(){
+    var buttons = document.querySelectorAll('.toggle button');
+    var swap = document.querySelectorAll('[data-it]');
+    function apply(lang){
+      document.querySelector('[data-block="it"]').hidden = (lang !== 'it');
+      document.querySelector('[data-block="en"]').hidden = (lang !== 'en');
+      swap.forEach(function(el){ el.innerHTML = el.getAttribute('data-' + lang); });
+      buttons.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+      document.documentElement.lang = lang;
+      try{ localStorage.setItem('choprun_privacy_lang', lang); }catch(e){}
+    }
+    buttons.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.lang); }); });
+    var saved = 'it';
+    try{ saved = localStorage.getItem('choprun_privacy_lang') || 'it'; }catch(e){}
+    apply(saved);
+  })();
+</script>
