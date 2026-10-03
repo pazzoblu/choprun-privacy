@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Chop & Run — Cancellazione dati</title>
 <meta name="description" content="Come richiedere l'eliminazione dei tuoi dati dal gioco Chop & Run: Zombie Road.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +31,8 @@
   h1{font-size:clamp(26px,5.5vw,36px); line-height:1.12; margin:22px 0 10px; font-weight:700; letter-spacing:-.01em; text-wrap:balance}
   .sub{color:var(--muted); font-size:15px; margin:0}
   .meta{display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; margin-top:20px; font-size:13.5px; color:var(--muted)}
-  .toggle{display:inline-flex; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-left:auto}
-  .toggle button{font:inherit; font-size:13px; font-weight:600; cursor:pointer; border:0; padding:7px 14px; background:transparent; color:var(--muted)}
+  .toggle{display:inline-flex; flex-wrap:wrap; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-left:auto}
+  .toggle button{font:inherit; font-size:13px; font-weight:600; cursor:pointer; border:0; padding:7px 11px; background:transparent; color:var(--muted)}
   .toggle button[aria-pressed="true"]{background:var(--accent); color:#fff}
   .toggle button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
   section{padding:28px 0; border-bottom:1px solid var(--line)} section:last-of-type{border-bottom:0}
@@ -54,13 +56,17 @@
 <div class="wrap">
   <header>
     <div class="brand">CHOP &amp; RUN<br><span>ZOMBIE ROAD</span></div>
-    <h1 data-it="Eliminazione dei dati" data-en="Data deletion">Eliminazione dei dati</h1>
-    <p class="sub" data-it="Come richiedere la cancellazione dei tuoi dati di gioco." data-en="How to request deletion of your game data.">Come richiedere la cancellazione dei tuoi dati di gioco.</p>
+    <h1 data-i18n="title">Eliminazione dei dati</h1>
+    <p class="sub" data-i18n="sub">Come richiedere la cancellazione dei tuoi dati di gioco.</p>
     <div class="meta">
-      <span data-it="App: Chop &amp; Run: Zombie Road (Android)" data-en="App: Chop &amp; Run: Zombie Road (Android)">App: Chop &amp; Run: Zombie Road (Android)</span>
+      <span data-i18n="app">App: Chop &amp; Run: Zombie Road (Android)</span>
       <div class="toggle" role="group" aria-label="Lingua / Language">
         <button type="button" data-lang="it" aria-pressed="true">IT</button>
         <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        <button type="button" data-lang="de" aria-pressed="false">DE</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
       </div>
     </div>
   </header>
@@ -94,7 +100,7 @@
         <div class="box">
           <p style="margin:0 0 4px"><b>Contatto</b></p>
           <p style="margin:0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
-          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-it="← Informativa sulla privacy" data-en="← Privacy policy">← Informativa sulla privacy</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Informativa sulla privacy</a></p>
         </div>
       </section>
     </div>
@@ -127,7 +133,139 @@
         <div class="box">
           <p style="margin:0 0 4px"><b>Contact</b></p>
           <p style="margin:0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
-          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html">← Privacy policy</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Privacy policy</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="es" hidden>
+      <section>
+        <p class="lead">Esta página explica cómo solicitar la <b>eliminación de los datos</b> asociados a tu perfil del juego <b>Chop &amp; Run: Zombie Road</b>. El juego usa una <b>cuenta anónima</b> (sin correo ni contraseña), por lo que para identificarte necesitamos tu <b>apodo</b> de juego.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Cómo solicitarla</p>
+        <h2>Pasos</h2>
+        <ol>
+          <li>Envía un correo a <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a>.</li>
+          <li>En el asunto escribe <b>"Eliminación de datos – Chop &amp; Run"</b>.</li>
+          <li>Indica el <b>apodo</b> que usas en el juego (lo ves en la pantalla de inicio y en los ajustes).</li>
+        </ol>
+        <p>Procesamos la solicitud y eliminamos los datos <b>en un plazo de 30 días</b>, confirmándotelo por correo.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Qué se elimina</p>
+        <h2>Datos eliminados</h2>
+        <ul>
+          <li>La <b>cuenta anónima</b> y su vinculación con el dispositivo.</li>
+          <li>El <b>apodo</b>.</li>
+          <li><b>Puntuaciones, récords, monedas y progreso</b> guardados en la nube.</li>
+        </ul>
+        <p>Tras la eliminación <b>no conservamos</b> estos datos. Nota: las <b>compras</b> las gestiona <b>Google Play</b> y sus registros siguen sujetos a las normas de Google, con independencia de nosotros.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contacto</b></p>
+          <p style="margin:0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Política de privacidad</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="pt" hidden>
+      <section>
+        <p class="lead">Esta página explica como solicitar a <b>exclusão dos dados</b> associados ao seu perfil do jogo <b>Chop &amp; Run: Zombie Road</b>. O jogo usa uma <b>conta anônima</b> (sem e-mail nem senha), então, para identificar você, precisamos do seu <b>apelido</b> de jogo.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Como solicitar</p>
+        <h2>Passos</h2>
+        <ol>
+          <li>Envie um e-mail para <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a>.</li>
+          <li>No assunto escreva <b>"Exclusão de dados – Chop &amp; Run"</b>.</li>
+          <li>Informe o <b>apelido</b> que você usa no jogo (aparece na tela inicial e nas configurações).</li>
+        </ol>
+        <p>Processamos a solicitação e excluímos os dados <b>em até 30 dias</b>, confirmando por e-mail.</p>
+      </section>
+      <section>
+        <p class="eyebrow">O que é excluído</p>
+        <h2>Dados excluídos</h2>
+        <ul>
+          <li>A <b>conta anônima</b> e o vínculo com o dispositivo.</li>
+          <li>O <b>apelido</b>.</li>
+          <li><b>Pontuações, recordes, moedas e progresso</b> salvos na nuvem.</li>
+        </ul>
+        <p>Após a exclusão, <b>não mantemos</b> esses dados. Observação: as <b>compras</b> são gerenciadas pelo <b>Google Play</b> e os respectivos registros continuam sujeitos às regras do Google, independentemente de nós.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contato</b></p>
+          <p style="margin:0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Política de Privacidade</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="de" hidden>
+      <section>
+        <p class="lead">Diese Seite erklärt, wie du die <b>Löschung der Daten</b> beantragst, die zu deinem Profil im Spiel <b>Chop &amp; Run: Zombie Road</b> gehören. Das Spiel nutzt ein <b>anonymes Konto</b> (keine E-Mail, kein Passwort); zur Identifizierung brauchen wir daher deinen <b>Spielernamen</b>.</p>
+      </section>
+      <section>
+        <p class="eyebrow">So beantragst du es</p>
+        <h2>Schritte</h2>
+        <ol>
+          <li>Sende eine E-Mail an <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a>.</li>
+          <li>Schreibe in den Betreff <b>„Datenlöschung – Chop &amp; Run“</b>.</li>
+          <li>Nenne den <b>Spielernamen</b>, den du im Spiel verwendest (du siehst ihn auf dem Startbildschirm und in den Einstellungen).</li>
+        </ol>
+        <p>Wir bearbeiten die Anfrage und löschen die Daten <b>innerhalb von 30 Tagen</b> und bestätigen dir das per E-Mail.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Was gelöscht wird</p>
+        <h2>Gelöschte Daten</h2>
+        <ul>
+          <li>Das <b>anonyme Konto</b> und seine Verknüpfung mit dem Gerät.</li>
+          <li>Der <b>Spielername</b>.</li>
+          <li><b>Punktestände, Rekorde, Münzen und Fortschritt</b>, die in der Cloud gespeichert sind.</li>
+        </ul>
+        <p>Nach der Löschung <b>speichern wir</b> diese Daten <b>nicht mehr</b>. Hinweis: <b>Käufe</b> werden über <b>Google Play</b> abgewickelt; die entsprechenden Datensätze unterliegen unabhängig von uns den Richtlinien von Google.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Kontakt</b></p>
+          <p style="margin:0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Datenschutzerklärung</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="fr" hidden>
+      <section>
+        <p class="lead">Cette page explique comment demander la <b>suppression des données</b> associées à ton profil dans le jeu <b>Chop &amp; Run: Zombie Road</b>. Le jeu utilise un <b>compte anonyme</b> (ni e-mail ni mot de passe) ; pour t'identifier, nous avons donc besoin de ton <b>pseudo</b> de jeu.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Comment la demander</p>
+        <h2>Étapes</h2>
+        <ol>
+          <li>Envoie un e-mail à <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a>.</li>
+          <li>Dans l'objet, écris <b>« Suppression des données – Chop &amp; Run »</b>.</li>
+          <li>Indique le <b>pseudo</b> que tu utilises dans le jeu (tu le vois sur l'écran d'accueil et dans les paramètres).</li>
+        </ol>
+        <p>Nous traitons la demande et supprimons les données <b>sous 30 jours</b>, avec confirmation par e-mail.</p>
+      </section>
+      <section>
+        <p class="eyebrow">Ce qui est supprimé</p>
+        <h2>Données supprimées</h2>
+        <ul>
+          <li>Le <b>compte anonyme</b> et son lien avec l'appareil.</li>
+          <li>Le <b>pseudo</b>.</li>
+          <li>Les <b>scores, records, pièces et la progression</b> enregistrés dans le cloud.</li>
+        </ul>
+        <p>Après la suppression, nous <b>ne conservons plus</b> ces données. Remarque : les <b>achats</b> sont gérés par <b>Google Play</b> et les enregistrements correspondants restent soumis aux règles de Google, indépendamment de nous.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contact</b></p>
+          <p style="margin:0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Politique de confidentialité</a></p>
         </div>
       </section>
     </div>
@@ -138,19 +276,37 @@
 
 <script>
   (function(){
+    var LANGS = ['it','en','es','pt','de','fr'];
+    var T = {
+      it:{title:'Eliminazione dei dati', sub:'Come richiedere la cancellazione dei tuoi dati di gioco.', app:'App: Chop &amp; Run: Zombie Road (Android)'},
+      en:{title:'Data deletion', sub:'How to request deletion of your game data.', app:'App: Chop &amp; Run: Zombie Road (Android)'},
+      es:{title:'Eliminación de datos', sub:'Cómo solicitar la eliminación de tus datos de juego.', app:'App: Chop &amp; Run: Zombie Road (Android)'},
+      pt:{title:'Exclusão de dados', sub:'Como solicitar a exclusão dos seus dados de jogo.', app:'App: Chop &amp; Run: Zombie Road (Android)'},
+      de:{title:'Datenlöschung', sub:'So beantragst du die Löschung deiner Spieldaten.', app:'App: Chop &amp; Run: Zombie Road (Android)'},
+      fr:{title:'Suppression des données', sub:'Comment demander la suppression de tes données de jeu.', app:'Appli : Chop &amp; Run: Zombie Road (Android)'}
+    };
     var buttons = document.querySelectorAll('.toggle button');
-    var swap = document.querySelectorAll('[data-it]');
+    var i18n = document.querySelectorAll('[data-i18n]');
+    var backlinks = document.querySelectorAll('[data-backlink]');
     function apply(lang){
-      document.querySelector('[data-block="it"]').hidden = (lang !== 'it');
-      document.querySelector('[data-block="en"]').hidden = (lang !== 'en');
-      swap.forEach(function(el){ el.innerHTML = el.getAttribute('data-' + lang); });
+      if (LANGS.indexOf(lang) < 0) lang = 'it';
+      LANGS.forEach(function(l){
+        var b = document.querySelector('[data-block="' + l + '"]');
+        if (b) b.hidden = (l !== lang);
+      });
+      i18n.forEach(function(el){ el.innerHTML = T[lang][el.getAttribute('data-i18n')]; });
+      backlinks.forEach(function(a){ a.setAttribute('href', 'privacy.html?lang=' + lang); });
       buttons.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
       document.documentElement.lang = lang;
-      try{ localStorage.setItem('choprun_lang', lang); }catch(e){}
+      try{ localStorage.setItem('choprun_privacy_lang', lang); }catch(e){}
     }
     buttons.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.lang); }); });
-    var saved = 'it';
-    try{ saved = localStorage.getItem('choprun_lang') || 'it'; }catch(e){}
-    apply(saved);
+    // Priorita': ?lang=xx > scelta salvata (condivisa con la pagina privacy) > lingua del browser > italiano.
+    var lang = '';
+    var m = /[?&]lang=([a-z]{2})/.exec(location.search);
+    if (m) lang = m[1];
+    if (!lang) { try{ lang = localStorage.getItem('choprun_privacy_lang') || ''; }catch(e){} }
+    if (!lang) { lang = (navigator.language || 'it').slice(0, 2).toLowerCase(); }
+    apply(lang);
   })();
 </script>
