@@ -1,0 +1,702 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chop &amp; Run Terms</title>
+<meta name="description" content="Termini del servizio del gioco Chop &amp; Run: Zombie Road.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700&display=swap">
+<style>
+  :root{
+    --bg:#f6f1ea; --panel:#fffdf9; --ink:#211a26; --muted:#6b6070;
+    --line:#e4d9cc; --accent:#d1451f; --accent-2:#5c9a2a; --chip-bg:#211a26; --chip-ink:#f6f1ea;
+    --shadow:0 1px 0 #efe7db, 0 18px 40px -28px rgba(33,26,38,.45);
+  }
+  :root:not([data-theme="light"]){ @media (prefers-color-scheme: dark){
+    :root{ --bg:#141019; --panel:#1d1725; --ink:#ece6f1; --muted:#a99fb4; --line:#2f2739;
+      --accent:#ff7a4d; --accent-2:#8fd15a; --chip-bg:#ff7a4d; --chip-ink:#171019;
+      --shadow:0 0 0 1px #241d2e, 0 24px 50px -30px rgba(0,0,0,.7); } } }
+  :root[data-theme="dark"]{ --bg:#141019; --panel:#1d1725; --ink:#ece6f1; --muted:#a99fb4; --line:#2f2739;
+    --accent:#ff7a4d; --accent-2:#8fd15a; --chip-bg:#ff7a4d; --chip-ink:#171019;
+    --shadow:0 0 0 1px #241d2e, 0 24px 50px -30px rgba(0,0,0,.7); }
+  *{box-sizing:border-box}
+  body{background:var(--bg); color:var(--ink); margin:0; padding:0 20px 72px;
+    font-family:"Libre Franklin", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    line-height:1.62; -webkit-font-smoothing:antialiased;}
+  .wrap{max-width:720px; margin:0 auto}
+  header{padding:56px 0 26px; border-bottom:1px solid var(--line)}
+  .brand{display:inline-block; font-family:"Press Start 2P", monospace; font-size:11px; line-height:1.5;
+    letter-spacing:.5px; color:var(--chip-ink); background:var(--chip-bg); padding:9px 12px; border-radius:7px;
+    box-shadow:0 3px 0 rgba(0,0,0,.28);}
+  .brand span{color:var(--accent)}
+  h1{font-size:clamp(26px,5.5vw,36px); line-height:1.12; margin:22px 0 10px; font-weight:700; letter-spacing:-.01em; text-wrap:balance}
+  .sub{color:var(--muted); font-size:15px; margin:0}
+  .meta{display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; margin-top:20px; font-size:13.5px; color:var(--muted)}
+  .toggle{display:inline-flex; flex-wrap:wrap; border:1px solid var(--line); border-radius:8px; overflow:hidden; margin-left:auto}
+  .toggle button{font:inherit; font-size:13px; font-weight:600; cursor:pointer; border:0; padding:7px 11px; background:transparent; color:var(--muted)}
+  .toggle button[aria-pressed="true"]{background:var(--accent); color:#fff}
+  .toggle button:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
+  section{padding:28px 0; border-bottom:1px solid var(--line)} section:last-of-type{border-bottom:0}
+  .eyebrow{font-size:12px; text-transform:uppercase; letter-spacing:.14em; color:var(--accent); font-weight:700; margin:0 0 6px}
+  h2{font-size:20px; font-weight:700; margin:0 0 12px; letter-spacing:-.01em; text-wrap:balance}
+  p{margin:0 0 14px} p:last-child{margin-bottom:0}
+  a{color:var(--accent); text-underline-offset:2px}
+  ol{margin:0; padding-left:22px; display:grid; gap:10px} ol li{padding-left:4px}
+  ul{margin:0; padding-left:0; list-style:none; display:grid; gap:10px}
+  ul li{position:relative; padding-left:26px}
+  ul li::before{content:""; position:absolute; left:6px; top:.62em; width:8px; height:8px; background:var(--accent-2); border-radius:2px; transform:rotate(45deg)}
+  b{font-weight:600}
+  .lead{font-size:17px}
+  .box{margin-top:22px; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; box-shadow:var(--shadow)}
+  .box a{font-weight:600}
+  footer{color:var(--muted); font-size:13px; padding-top:24px; text-align:center}
+  .backlink{font-size:13px}
+  [hidden]{display:none !important}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand">CHOP &amp; RUN<br><span>ZOMBIE ROAD</span></div>
+    <h1 data-i18n="title">Termini del servizio</h1>
+    <p class="sub" data-i18n="sub">Le regole per usare il gioco.</p>
+    <div class="meta">
+      <span><b data-i18n="effective">In vigore dal:</b> <span data-i18n="date">3 ottobre 2026</span></span>
+      <span data-i18n="app">App: Chop &amp; Run: Zombie Road (Android)</span>
+      <div class="toggle" role="group" aria-label="Lingua / Language">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button type="button" data-lang="pt" aria-pressed="false">PT</button>
+        <button type="button" data-lang="de" aria-pressed="false">DE</button>
+        <button type="button" data-lang="fr" aria-pressed="false">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div data-block="it">
+      <section>
+        <p class="lead">Questi termini disciplinano l'uso del gioco <b>Chop &amp; Run: Zombie Road</b> (di seguito "il Gioco"), sviluppato da <b>Giovanni Luca Tucceri</b> ("lo Sviluppatore"). Scaricando, installando o usando il Gioco accetti questi termini; se non li accetti, non usare il Gioco. Leggi anche l'<a href="privacy.html">Informativa sulla privacy</a>.</p>
+      </section>
+      <section>
+        <p class="eyebrow">1 · Licenza d'uso</p>
+        <h2>Cosa puoi fare</h2>
+        <p>Ti concediamo una licenza personale, non esclusiva, non trasferibile e revocabile per installare e usare il Gioco sui tuoi dispositivi Android, per uso personale e non commerciale e nel rispetto di questi termini. Il Gioco ti viene concesso in licenza, non venduto.</p>
+      </section>
+      <section>
+        <p class="eyebrow">2 · Diritti d'autore</p>
+        <h2>Proprietà intellettuale</h2>
+        <p>Il Gioco e tutti i suoi contenuti — codice, grafica, animazioni, musiche, effetti sonori, testi, storia, nomi e loghi — sono opera dello Sviluppatore o usati su licenza e sono protetti dal diritto d'autore e dalle altre norme sulla proprietà intellettuale. <b>© 2026 Giovanni Luca Tucceri. Tutti i diritti riservati.</b> Nessun diritto ti viene trasferito, salvo la licenza del punto 1.</p>
+        <p>Senza autorizzazione scritta non puoi copiare, modificare, distribuire, vendere, noleggiare, decompilare, disassemblare o sottoporre a reverse engineering il Gioco, né estrarne o riutilizzarne grafica, audio, testi o codice, né creare opere derivate.</p>
+      </section>
+      <section>
+        <p class="eyebrow">3 · Account, nickname e classifiche</p>
+        <h2>Il tuo profilo</h2>
+        <p>Il Gioco usa un account anonimo creato automaticamente. Il nickname che scegli e il tuo livello massimo sono visibili agli altri giocatori. Non usare nickname offensivi, illegali, che violano diritti altrui, che contengono dati personali o che imitano altre persone o lo Sviluppatore. Lo Sviluppatore può, a propria discrezione, modificare o rimuovere nickname, risultati e posizioni in classifica che violano questi termini o che risultano ottenuti in modo irregolare.</p>
+      </section>
+      <section>
+        <p class="eyebrow">4 · Sfida e premi</p>
+        <h2>Regole della Sfida</h2>
+        <p>La Sfida raggruppa giocatori di livello simile per un periodo di tempo; i premi sono esclusivamente monete di gioco, senza valore monetario. Regole, durata e premi possono cambiare, e la Sfida può essere sospesa o interrotta in qualsiasi momento. I risultati ottenuti con cheat, exploit o manipolazioni possono essere annullati e i relativi premi revocati.</p>
+      </section>
+      <section>
+        <p class="eyebrow">5 · Comportamenti vietati</p>
+        <h2>Cosa non puoi fare</h2>
+        <ul>
+          <li>usare cheat, bot, modifiche o strumenti che alterano il Gioco o i suoi dati;</li>
+          <li>sfruttare volontariamente errori del Gioco a proprio vantaggio;</li>
+          <li>tentare di manipolare la classifica o il raggruppamento dei giocatori nella Sfida (matchmaking);</li>
+          <li>accedere, o tentare di accedere, senza autorizzazione ai server, agli account altrui o ai dati del servizio, o sovraccaricarli;</li>
+          <li>aggirare le misure tecniche di protezione del Gioco;</li>
+          <li>usare il Gioco per scopi illeciti o per attività commerciali non autorizzate;</li>
+          <li>ogni altro comportamento analogo a quelli sopra elencati o comunque idoneo, a ragionevole giudizio dello Sviluppatore, a compromettere l'integrità del Gioco, la sicurezza del servizio o l'esperienza degli altri giocatori, anche se non previsto espressamente in questi termini.</li>
+        </ul>
+        <p>In caso di violazione possiamo sospendere o cancellare l'account senza preavviso, fatti salvi i tuoi diritti di legge.</p>
+      </section>
+      <section>
+        <p class="eyebrow">6 · Monete, vite e acquisti</p>
+        <h2>Oggetti virtuali</h2>
+        <p>Monete, vite, veicoli, accessori e armi sono oggetti virtuali del Gioco: non hanno valore reale, non sono convertibili in denaro né trasferibili. Gli oggetti virtuali non sono di proprietà dell'utente: ti viene concesso solo il diritto di usarli nel Gioco. Gli acquisti facoltativi (pacchetti di monete, rimozione della pubblicità, sostegno allo sviluppatore) sono gestiti da <b>Google Play</b> e soggetti ai suoi termini e alla sua politica di rimborso: rimborsi e recesso si richiedono a Google, fatti salvi i diritti inderogabili dei consumatori. Se elimini l'account o il Gioco puoi perdere monete e progressi non ancora sincronizzati con il cloud.</p>
+      </section>
+      <section>
+        <p class="eyebrow">7 · Pubblicità</p>
+        <h2>Annunci</h2>
+        <p>Il Gioco mostra pubblicità tramite <b>Google AdMob</b>; alcuni annunci a video sono facoltativi e danno una ricompensa. Puoi rimuovere gli annunci con l'acquisto apposito. La disponibilità e il tipo di annunci possono variare in base al Paese e alle impostazioni del dispositivo. Non siamo responsabili dei contenuti degli inserzionisti né dei siti o delle app a cui rimandano. I dettagli sono nell'<a href="privacy.html">Informativa sulla privacy</a>.</p>
+      </section>
+      <section>
+        <p class="eyebrow">8 · Disponibilità del servizio</p>
+        <h2>Il Gioco «così com'è»</h2>
+        <p>Il Gioco è fornito «così com'è» e «come disponibile». Possiamo aggiornarlo, modificarlo o interromperlo, in tutto o in parte. Non garantiamo la disponibilità continua delle funzionalità online (classifica, Sfida, sincronizzazione), l'assenza di errori né la conservazione dei dati salvati nel cloud.</p>
+      </section>
+      <section>
+        <p class="eyebrow">9 · Limitazione di responsabilità</p>
+        <h2>Entro i limiti di legge</h2>
+        <p>Nei limiti consentiti dalla legge, lo Sviluppatore non risponde di danni indiretti o consequenziali, né della perdita di dati o di oggetti virtuali derivanti dall'uso o dall'impossibilità di usare il Gioco. Nulla in questi termini esclude o limita la responsabilità che non può essere esclusa per legge (ad esempio per dolo o colpa grave) né i diritti inderogabili dei consumatori.</p>
+      </section>
+      <section>
+        <p class="eyebrow">10 · Componenti di terze parti</p>
+        <h2>Software e servizi esterni</h2>
+        <p>Il Gioco usa software e servizi di terze parti (ad esempio il motore <b>Godot Engine</b>, <b>Google AdMob</b>, <b>Google Play</b> e <b>Supabase</b>), regolati dalle rispettive licenze e condizioni, che restano ai rispettivi titolari.</p>
+      </section>
+      <section>
+        <p class="eyebrow">11 · Segnalazioni e feedback</p>
+        <h2>Contributi e abusi</h2>
+        <p>Se ritieni che un contenuto del Gioco violi un tuo diritto, o vuoi segnalare un problema o un abuso, scrivi al contatto in fondo alla pagina. Se ci invii idee o suggerimenti, ci autorizzi a usarli liberamente e senza compenso.</p>
+      </section>
+      <section>
+        <p class="eyebrow">12 · Minori</p>
+        <h2>Età</h2>
+        <p>Il Gioco non è rivolto ai minori di 13 anni. Se sei minorenne, usa il Gioco con il consenso di un genitore o tutore, soprattutto per gli acquisti.</p>
+      </section>
+      <section>
+        <p class="eyebrow">13 · Cessazione e cancellazione</p>
+        <h2>Smettere di usare il Gioco</h2>
+        <p>Puoi smettere di usare il Gioco in qualsiasi momento e chiedere la cancellazione dei tuoi dati con la <a href="delete-data.html">pagina dedicata</a>. La cancellazione dei dati avviene secondo quanto previsto dall'<a href="privacy.html">Informativa sulla privacy</a>, compresi tempi e modalità.</p>
+      </section>
+      <section>
+        <p class="eyebrow">14 · Legge applicabile</p>
+        <h2>Foro competente</h2>
+        <p>Questi termini sono regolati dalla legge italiana. Per le controversie con i consumatori restano ferme le tutele e la competenza territoriale inderogabili previste dalla legge (foro del luogo di residenza o domicilio del consumatore); negli altri casi il foro competente è il Tribunale di Sulmona (AQ), Italia.</p>
+      </section>
+      <section>
+        <p class="eyebrow">15 · Modifiche</p>
+        <h2>Aggiornamenti dei termini</h2>
+        <p>Possiamo modificare questi termini: la data in alto indica l'ultima versione e le modifiche rilevanti saranno segnalate nel Gioco o qui. Se continui a usare il Gioco dopo una modifica, la accetti.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contatti</b></p>
+          <p style="margin:0">Per domande sui termini o per segnalazioni:</p>
+          <p style="margin:6px 0 0"><a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Informativa sulla privacy</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="en" hidden>
+      <section>
+        <p class="lead">These terms govern the use of the game <b>Chop &amp; Run: Zombie Road</b> (“the Game”), developed by Giovanni Luca Tucceri (“the Developer”). By downloading, installing, or using the Game, you accept these terms; if you do not accept them, do not use the Game. Also read the Privacy Policy.</p>
+      </section>
+      <section>
+        <p class="eyebrow">1 · License</p>
+        <h2>What you can do</h2>
+        <p>We grant you a personal, non-exclusive, non-transferable, revocable license to install and use the Game on your Android devices, for personal and non-commercial use and in compliance with these terms. The Game is licensed to you, not sold.</p>
+      </section>
+      <section>
+        <p class="eyebrow">2 · Copyright</p>
+        <h2>Intellectual property</h2>
+        <p>The Game and all its contents — code, graphics, animations, music, sound effects, text, story, names, and logos — are the work of the Developer or used under license and are protected by copyright and other intellectual property laws. © 2026 Giovanni Luca Tucceri. All rights reserved. No rights are transferred to you except the license in point 1.</p>
+        <p>Without written authorization, you may not copy, modify, distribute, sell, rent, decompile, disassemble, or reverse engineer the Game, nor extract or reuse graphics, audio, text, or code, nor create derivative works.</p>
+      </section>
+      <section>
+        <p class="eyebrow">3 · Account, nickname, and leaderboards</p>
+        <h2>Your profile</h2>
+        <p>The Game uses an anonymous account created automatically. The nickname you choose and your highest level are visible to other players. Do not use offensive, illegal, infringing nicknames, nicknames containing personal data, or nicknames that impersonate others or the Developer. The Developer may, at his discretion, modify or remove nicknames, results, or leaderboard positions that violate these terms or appear to be obtained irregularly.</p>
+      </section>
+      <section>
+        <p class="eyebrow">4 · Challenge and rewards</p>
+        <h2>Challenge rules</h2>
+        <p>The Challenge groups players of similar level for a period of time; rewards consist only of in-game coins, with no monetary value. Rules, duration, and rewards may change, and the Challenge may be suspended or stopped at any time. Results obtained through cheats, exploits, or manipulation may be annulled and rewards revoked.</p>
+      </section>
+      <section>
+        <p class="eyebrow">5 · Prohibited behavior</p>
+        <h2>What you cannot do</h2>
+        <ul>
+          <li>use cheats, bots, modifications, or tools that alter the Game or its data;</li>
+          <li>intentionally exploit Game errors for advantage;</li>
+          <li>attempt to manipulate the leaderboard or player grouping in the Challenge (matchmaking);</li>
+          <li>access or attempt to access servers, other players’ accounts, or service data without authorization, or overload them;</li>
+          <li>bypass technical protection measures of the Game;</li>
+          <li>use the Game for illegal purposes or unauthorized commercial activities;</li>
+          <li>any other behavior similar to those above or otherwise capable, in the Developer’s reasonable judgment, of compromising the integrity of the Game, the security of the service, or the experience of other players, even if not expressly listed in these terms.</li>
+        </ul>
+        <p>In case of violation, we may suspend or delete the account without notice, without prejudice to your legal rights.</p>
+      </section>
+      <section>
+        <p class="eyebrow">6 · Coins, lives, and purchases</p>
+        <h2>Virtual items</h2>
+        <p>Coins, lives, vehicles, accessories, and weapons are virtual items of the Game: they have no real value, are not convertible into money, and are not transferable. Virtual items are not owned by the user: you are granted only the right to use them in the Game. Optional purchases (coin packs, ad removal, developer support) are handled by Google Play and subject to its terms and refund policy: refunds and withdrawal must be requested from Google, without prejudice to mandatory consumer rights. If you delete the account or the Game, you may lose coins and progress not yet synchronized with the cloud.</p>
+      </section>
+      <section>
+        <p class="eyebrow">7 · Advertising</p>
+        <h2>Ads</h2>
+        <p>The Game shows ads through Google AdMob; some video ads are optional and provide a reward. You can remove ads with the dedicated purchase. Availability and type of ads may vary depending on country and device settings. We are not responsible for advertiser content or the sites or apps they link to. Details are in the Privacy Policy.</p>
+      </section>
+      <section>
+        <p class="eyebrow">8 · Service availability</p>
+        <h2>The Game “as is”</h2>
+        <p>The Game is provided “as is” and “as available”. We may update, modify, or discontinue it, in whole or in part. We do not guarantee continuous availability of online features (leaderboard, Challenge, synchronization), absence of errors, or preservation of cloud-saved data.</p>
+      </section>
+      <section>
+        <p class="eyebrow">9 · Limitation of liability</p>
+        <h2>Within legal limits</h2>
+        <p>Within the limits allowed by law, the Developer is not liable for indirect or consequential damages, nor for loss of data or virtual items resulting from use or inability to use the Game. Nothing in these terms excludes or limits liability that cannot be excluded by law (e.g., fraud or gross negligence) nor mandatory consumer rights.</p>
+      </section>
+      <section>
+        <p class="eyebrow">10 · Third-party components</p>
+        <h2>External software and services</h2>
+        <p>The Game uses third-party software and services (such as the Godot Engine, Google AdMob, Google Play, and Supabase), governed by their respective licenses and conditions, which remain with their respective owners.</p>
+      </section>
+      <section>
+        <p class="eyebrow">11 · Reports and feedback</p>
+        <h2>Contributions and abuse</h2>
+        <p>If you believe that any Game content violates your rights, or want to report a problem or abuse, write to the contact at the bottom of the page. If you send us ideas or suggestions, you authorize us to use them freely and without compensation.</p>
+      </section>
+      <section>
+        <p class="eyebrow">12 · Minors</p>
+        <h2>Age</h2>
+        <p>The Game is not directed at children under 13. If you are a minor, use the Game with the consent of a parent or guardian, especially for purchases.</p>
+      </section>
+      <section>
+        <p class="eyebrow">13 · Termination and deletion</p>
+        <h2>Stopping use of the Game</h2>
+        <p>You may stop using the Game at any time and request deletion of your data through the dedicated page. Data deletion follows the Privacy Policy, including timing and methods.</p>
+      </section>
+      <section>
+        <p class="eyebrow">14 · Applicable law</p>
+        <h2>Competent court</h2>
+        <p>These terms are governed by Italian law. For consumer disputes, mandatory protections and territorial jurisdiction remain (court of the consumer’s residence or domicile); in other cases, the competent court is the Court of Sulmona (AQ), Italy.</p>
+      </section>
+      <section>
+        <p class="eyebrow">15 · Changes</p>
+        <h2>Updates to the terms</h2>
+        <p>We may modify these terms: the date above indicates the latest version, and relevant changes will be announced in the Game or here. If you continue using the Game after a change, you accept it.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contacts</b></p>
+          <p style="margin:0">For questions about the terms or reports: <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Privacy Policy</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="es" hidden>
+      <section>
+        <p class="lead">Estos términos regulan el uso del juego <b>Chop &amp; Run: Zombie Road</b> («el Juego»), desarrollado por Giovanni Luca Tucceri («el Desarrollador»). Al descargar, instalar o usar el Juego aceptas estos términos; si no los aceptas, no uses el Juego. Lee también la Política de privacidad.</p>
+      </section>
+      <section>
+        <p class="eyebrow">1 · Licencia de uso</p>
+        <h2>Qué puedes hacer</h2>
+        <p>Te concedemos una licencia personal, no exclusiva, no transferible y revocable para instalar y usar el Juego en tus dispositivos Android, para uso personal y no comercial y conforme a estos términos. El Juego se te concede bajo licencia, no se vende.</p>
+      </section>
+      <section>
+        <p class="eyebrow">2 · Derechos de autor</p>
+        <h2>Propiedad intelectual</h2>
+        <p>El Juego y todos sus contenidos — código, gráficos, animaciones, música, efectos de sonido, textos, historia, nombres y logotipos — son obra del Desarrollador o usados bajo licencia y están protegidos por derechos de autor y otras normas de propiedad intelectual. © 2026 Giovanni Luca Tucceri. Todos los derechos reservados. No se te transfiere ningún derecho salvo la licencia del punto 1.</p>
+        <p>Sin autorización escrita no puedes copiar, modificar, distribuir, vender, alquilar, descompilar, desensamblar ni aplicar ingeniería inversa al Juego, ni extraer o reutilizar gráficos, audio, textos o código, ni crear obras derivadas.</p>
+      </section>
+      <section>
+        <p class="eyebrow">3 · Cuenta, nickname y clasificaciones</p>
+        <h2>Tu perfil</h2>
+        <p>El Juego usa una cuenta anónima creada automáticamente. El nickname que eliges y tu nivel máximo son visibles para otros jugadores. No uses nicknames ofensivos, ilegales, que violen derechos de terceros, que contengan datos personales o que imiten a otras personas o al Desarrollador. El Desarrollador puede, a su discreción, modificar o eliminar nicknames, resultados o posiciones en la clasificación que violen estos términos o parezcan obtenidos de forma irregular.</p>
+      </section>
+      <section>
+        <p class="eyebrow">4 · Desafío y premios</p>
+        <h2>Reglas del Desafío</h2>
+        <p>El Desafío agrupa jugadores de nivel similar durante un periodo; los premios son exclusivamente monedas del juego, sin valor monetario. Las reglas, duración y premios pueden cambiar, y el Desafío puede suspenderse o interrumpirse en cualquier momento. Los resultados obtenidos mediante trampas, exploits o manipulaciones pueden anularse y los premios revocarse.</p>
+      </section>
+      <section>
+        <p class="eyebrow">5 · Comportamientos prohibidos</p>
+        <h2>Lo que no puedes hacer</h2>
+        <ul>
+          <li>usar trampas, bots, modificaciones o herramientas que alteren el Juego o sus datos;</li>
+          <li>explotar voluntariamente errores del Juego para obtener ventaja;</li>
+          <li>intentar manipular la clasificación o el agrupamiento de jugadores en el Desafío (matchmaking);</li>
+          <li>acceder o intentar acceder sin autorización a servidores, cuentas de otros jugadores o datos del servicio, o sobrecargarlos;</li>
+          <li>eludir las medidas técnicas de protección del Juego;</li>
+          <li>usar el Juego para fines ilícitos o actividades comerciales no autorizadas;</li>
+          <li>cualquier otro comportamiento similar a los anteriores o que, a juicio razonable del Desarrollador, pueda comprometer la integridad del Juego, la seguridad del servicio o la experiencia de otros jugadores, aunque no esté expresamente previsto en estos términos.</li>
+        </ul>
+        <p>En caso de violación podemos suspender o eliminar la cuenta sin previo aviso, sin perjuicio de tus derechos legales.</p>
+      </section>
+      <section>
+        <p class="eyebrow">6 · Monedas, vidas y compras</p>
+        <h2>Objetos virtuales</h2>
+        <p>Las monedas, vidas, vehículos, accesorios y armas son objetos virtuales del Juego: no tienen valor real, no son convertibles en dinero ni transferibles. Los objetos virtuales no son propiedad del usuario: solo se concede el derecho a usarlos en el Juego. Las compras opcionales (packs de monedas, eliminación de anuncios, apoyo al desarrollador) son gestionadas por Google Play y sujetas a sus términos y política de reembolso: los reembolsos y la retirada deben solicitarse a Google, sin perjuicio de los derechos imperativos de los consumidores. Si eliminas la cuenta o el Juego puedes perder monedas y progreso no sincronizado aún con la nube.</p>
+      </section>
+      <section>
+        <p class="eyebrow">7 · Publicidad</p>
+        <h2>Anuncios</h2>
+        <p>El Juego muestra anuncios mediante Google AdMob; algunos anuncios de vídeo son opcionales y ofrecen una recompensa. Puedes eliminar los anuncios con la compra correspondiente. La disponibilidad y el tipo de anuncios pueden variar según el país y los ajustes del dispositivo. No somos responsables del contenido de los anunciantes ni de los sitios o apps a los que enlazan. Los detalles están en la Política de privacidad.</p>
+      </section>
+      <section>
+        <p class="eyebrow">8 · Disponibilidad del servicio</p>
+        <h2>El Juego «tal cual»</h2>
+        <p>El Juego se proporciona «tal cual» y «según disponibilidad». Podemos actualizarlo, modificarlo o interrumpirlo, total o parcialmente. No garantizamos la disponibilidad continua de las funciones online (clasificación, Desafío, sincronización), la ausencia de errores ni la conservación de los datos guardados en la nube.</p>
+      </section>
+      <section>
+        <p class="eyebrow">9 · Limitación de responsabilidad</p>
+        <h2>Dentro de los límites legales</h2>
+        <p>Dentro de los límites permitidos por la ley, el Desarrollador no responde de daños indirectos o consecuenciales, ni de la pérdida de datos u objetos virtuales derivados del uso o la imposibilidad de usar el Juego. Nada en estos términos excluye o limita la responsabilidad que no puede excluirse por ley (por ejemplo, dolo o negligencia grave) ni los derechos imperativos de los consumidores.</p>
+      </section>
+      <section>
+        <p class="eyebrow">10 · Componentes de terceros</p>
+        <h2>Software y servicios externos</h2>
+        <p>El Juego usa software y servicios de terceros (como el motor Godot Engine, Google AdMob, Google Play y Supabase), regulados por sus respectivas licencias y condiciones, que pertenecen a sus titulares.</p>
+      </section>
+      <section>
+        <p class="eyebrow">11 · Informes y comentarios</p>
+        <h2>Contribuciones y abusos</h2>
+        <p>Si consideras que algún contenido del Juego vulnera tus derechos, o quieres informar de un problema o abuso, escribe al contacto al final de la página. Si nos envías ideas o sugerencias, nos autorizas a usarlas libremente y sin compensación.</p>
+      </section>
+      <section>
+        <p class="eyebrow">12 · Menores</p>
+        <h2>Edad</h2>
+        <p>El Juego no está dirigido a menores de 13 años. Si eres menor, usa el Juego con el consentimiento de un padre o tutor, especialmente para las compras.</p>
+      </section>
+      <section>
+        <p class="eyebrow">13 · Cese y eliminación</p>
+        <h2>Dejar de usar el Juego</h2>
+        <p>Puedes dejar de usar el Juego en cualquier momento y solicitar la eliminación de tus datos mediante la página dedicada. La eliminación de los datos se realiza según lo previsto en la Política de privacidad, incluidos plazos y procedimientos.</p>
+      </section>
+      <section>
+        <p class="eyebrow">14 · Ley aplicable</p>
+        <h2>Tribunal competente</h2>
+        <p>Estos términos se rigen por la ley italiana. Para disputas con consumidores, se mantienen las protecciones y la competencia territorial imperativas previstas por la ley (tribunal del lugar de residencia o domicilio del consumidor); en los demás casos, el tribunal competente es el Tribunal de Sulmona (AQ), Italia.</p>
+      </section>
+      <section>
+        <p class="eyebrow">15 · Modificaciones</p>
+        <h2>Actualizaciones de los términos</h2>
+        <p>Podemos modificar estos términos: la fecha superior indica la última versión y los cambios relevantes se señalarán en el Juego o aquí. Si continúas usando el Juego después de una modificación, la aceptas.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contactos</b></p>
+          <p style="margin:0">Para preguntas sobre los términos o para informes: <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Política de privacidad</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="pt" hidden>
+      <section>
+        <p class="lead">Estes termos regulam o uso do jogo <b>Chop &amp; Run: Zombie Road</b> (“o Jogo”), desenvolvido por Giovanni Luca Tucceri (“o Desenvolvedor”). Ao baixar, instalar ou usar o Jogo, você aceita estes termos; se não aceitar, não use o Jogo. Leia também a Política de privacidade.</p>
+      </section>
+      <section>
+        <p class="eyebrow">1 · Licença de uso</p>
+        <h2>O que você pode fazer</h2>
+        <p>Concedemos a você uma licença pessoal, não exclusiva, não transferível e revogável para instalar e usar o Jogo em seus dispositivos Android, para uso pessoal e não comercial e conforme estes termos. O Jogo é licenciado para você, não vendido.</p>
+      </section>
+      <section>
+        <p class="eyebrow">2 · Direitos autorais</p>
+        <h2>Propriedade intelectual</h2>
+        <p>O Jogo e todos os seus conteúdos — código, gráficos, animações, músicas, efeitos sonoros, textos, história, nomes e logotipos — são obra do Desenvolvedor ou usados sob licença e são protegidos por direitos autorais e outras normas de propriedade intelectual. © 2026 Giovanni Luca Tucceri. Todos os direitos reservados. Nenhum direito é transferido a você, exceto a licença do ponto 1.</p>
+        <p>Sem autorização por escrito, você não pode copiar, modificar, distribuir, vender, alugar, descompilar, desmontar ou aplicar engenharia reversa ao Jogo, nem extrair ou reutilizar gráficos, áudio, textos ou código, nem criar obras derivadas.</p>
+      </section>
+      <section>
+        <p class="eyebrow">3 · Conta, apelido e classificações</p>
+        <h2>Seu perfil</h2>
+        <p>O Jogo usa uma conta anônima criada automaticamente. O apelido que você escolhe e seu nível máximo são visíveis para outros jogadores. Não use apelidos ofensivos, ilegais, que violem direitos de terceiros, que contenham dados pessoais ou que imitem outras pessoas ou o Desenvolvedor. O Desenvolvedor pode, a seu critério, modificar ou remover apelidos, resultados ou posições na classificação que violem estes termos ou pareçam obtidos de forma irregular.</p>
+      </section>
+      <section>
+        <p class="eyebrow">4 · Desafio e prêmios</p>
+        <h2>Regras do Desafio</h2>
+        <p>O Desafio agrupa jogadores de nível semelhante por um período; os prêmios são exclusivamente moedas do jogo, sem valor monetário. Regras, duração e prêmios podem mudar, e o Desafio pode ser suspenso ou interrompido a qualquer momento. Resultados obtidos com trapaças, exploits ou manipulações podem ser anulados e prêmios revogados.</p>
+      </section>
+      <section>
+        <p class="eyebrow">5 · Comportamentos proibidos</p>
+        <h2>O que você não pode fazer</h2>
+        <ul>
+          <li>usar trapaças, bots, modificações ou ferramentas que alterem o Jogo ou seus dados;</li>
+          <li>explorar voluntariamente erros do Jogo para obter vantagem;</li>
+          <li>tentar manipular a classificação ou o agrupamento de jogadores no Desafio (matchmaking);</li>
+          <li>acessar ou tentar acessar servidores, contas de outros jogadores ou dados do serviço sem autorização, ou sobrecarregá-los;</li>
+          <li>contornar medidas técnicas de proteção do Jogo;</li>
+          <li>usar o Jogo para fins ilícitos ou atividades comerciais não autorizadas;</li>
+          <li>qualquer outro comportamento semelhante aos anteriores ou que, a critério razoável do Desenvolvedor, possa comprometer a integridade do Jogo, a segurança do serviço ou a experiência de outros jogadores, mesmo que não esteja expressamente previsto nestes termos.</li>
+        </ul>
+        <p>Em caso de violação, podemos suspender ou excluir a conta sem aviso prévio, sem prejuízo dos seus direitos legais.</p>
+      </section>
+      <section>
+        <p class="eyebrow">6 · Moedas, vidas e compras</p>
+        <h2>Itens virtuais</h2>
+        <p>Moedas, vidas, veículos, acessórios e armas são itens virtuais do Jogo: não têm valor real, não são conversíveis em dinheiro nem transferíveis. Os itens virtuais não são propriedade do usuário: você recebe apenas o direito de usá-los no Jogo. Compras opcionais (pacotes de moedas, remoção de anúncios, apoio ao desenvolvedor) são gerenciadas pelo Google Play e sujeitas aos seus termos e política de reembolso: reembolsos e desistência devem ser solicitados ao Google, sem prejuízo dos direitos dos consumidores. Se você excluir a conta ou o Jogo, pode perder moedas e progresso ainda não sincronizados com a nuvem.</p>
+      </section>
+      <section>
+        <p class="eyebrow">7 · Publicidade</p>
+        <h2>Anúncios</h2>
+        <p>O Jogo exibe anúncios por meio do Google AdMob; alguns anúncios em vídeo são opcionais e oferecem recompensa. Você pode remover anúncios com a compra correspondente. A disponibilidade e o tipo de anúncios podem variar conforme o país e as configurações do dispositivo. Não somos responsáveis pelo conteúdo dos anunciantes nem pelos sites ou apps para os quais eles direcionam. Detalhes estão na Política de privacidade.</p>
+      </section>
+      <section>
+        <p class="eyebrow">8 · Disponibilidade do serviço</p>
+        <h2>O Jogo “como está”</h2>
+        <p>O Jogo é fornecido “como está” e “conforme disponibilidade”. Podemos atualizá-lo, modificá-lo ou interrompê-lo, total ou parcialmente. Não garantimos disponibilidade contínua das funções online (classificação, Desafio, sincronização), ausência de erros ou preservação dos dados salvos na nuvem.</p>
+      </section>
+      <section>
+        <p class="eyebrow">9 · Limitação de responsabilidade</p>
+        <h2>Dentro dos limites legais</h2>
+        <p>Dentro dos limites permitidos por lei, o Desenvolvedor não é responsável por danos indiretos ou consequenciais, nem pela perda de dados ou itens virtuais decorrentes do uso ou impossibilidade de usar o Jogo. Nada nestes termos exclui ou limita responsabilidade que não pode ser excluída por lei (por exemplo, dolo ou negligência grave), nem direitos obrigatórios dos consumidores.</p>
+      </section>
+      <section>
+        <p class="eyebrow">10 · Componentes de terceiros</p>
+        <h2>Software e serviços externos</h2>
+        <p>O Jogo usa software e serviços de terceiros (como o motor Godot Engine, Google AdMob, Google Play e Supabase), regidos por suas respectivas licenças e condições, que permanecem propriedade de seus titulares.</p>
+      </section>
+      <section>
+        <p class="eyebrow">11 · Relatórios e feedback</p>
+        <h2>Contribuições e abusos</h2>
+        <p>Se você considerar que algum conteúdo do Jogo viola seus direitos, ou quiser relatar um problema ou abuso, escreva para o contato no final da página. Se você nos enviar ideias ou sugestões, você nos autoriza a usá-las livremente e sem compensação.</p>
+      </section>
+      <section>
+        <p class="eyebrow">12 · Menores</p>
+        <h2>Idade</h2>
+        <p>O Jogo não é destinado a menores de 13 anos. Se você for menor de idade, use o Jogo com o consentimento de um responsável, especialmente para compras.</p>
+      </section>
+      <section>
+        <p class="eyebrow">13 · Encerramento e exclusão</p>
+        <h2>Parar de usar o Jogo</h2>
+        <p>Você pode parar de usar o Jogo a qualquer momento e solicitar a exclusão dos seus dados pela página dedicada. A exclusão dos dados ocorre conforme previsto na Política de privacidade, incluindo prazos e procedimentos.</p>
+      </section>
+      <section>
+        <p class="eyebrow">14 · Lei aplicável</p>
+        <h2>Tribunal competente</h2>
+        <p>Estes termos são regidos pela lei italiana. Para disputas envolvendo consumidores, permanecem as proteções e a competência territorial obrigatórias previstas em lei (tribunal do local de residência ou domicílio do consumidor); nos demais casos, o tribunal competente é o Tribunal de Sulmona (AQ), Itália.</p>
+      </section>
+      <section>
+        <p class="eyebrow">15 · Alterações</p>
+        <h2>Atualizações dos termos</h2>
+        <p>Podemos modificar estes termos: a data acima indica a versão mais recente e alterações relevantes serão informadas no Jogo ou aqui. Se você continuar usando o Jogo após uma alteração, você a aceita.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contatos</b></p>
+          <p style="margin:0">Para dúvidas sobre os termos ou para relatórios: <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Política de privacidade</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="de" hidden>
+      <section>
+        <p class="lead">Diese Bedingungen regeln die Nutzung des Spiels <b>Chop &amp; Run: Zombie Road</b> („das Spiel“), entwickelt von Giovanni Luca Tucceri („der Entwickler“). Durch das Herunterladen, Installieren oder Nutzen des Spiels akzeptierst du diese Bedingungen; wenn du sie nicht akzeptierst, nutze das Spiel nicht. Lies auch die Datenschutzerklärung.</p>
+      </section>
+      <section>
+        <p class="eyebrow">1 · Lizenz</p>
+        <h2>Was du tun darfst</h2>
+        <p>Wir gewähren dir eine persönliche, nicht ausschließliche, nicht übertragbare und widerrufliche Lizenz, das Spiel auf deinen Android-Geräten zu installieren und zu nutzen, für den persönlichen und nicht kommerziellen Gebrauch und im Einklang mit diesen Bedingungen. Das Spiel wird dir lizenziert, nicht verkauft.</p>
+      </section>
+      <section>
+        <p class="eyebrow">2 · Urheberrecht</p>
+        <h2>Geistiges Eigentum</h2>
+        <p>Das Spiel und alle seine Inhalte — Code, Grafiken, Animationen, Musik, Soundeffekte, Texte, Handlung, Namen und Logos — stammen vom Entwickler oder werden unter Lizenz genutzt und sind durch das Urheberrecht und andere Vorschriften zum Schutz des geistigen Eigentums geschützt. © 2026 Giovanni Luca Tucceri. Alle Rechte vorbehalten. Dir werden keine Rechte übertragen, außer der Lizenz nach Punkt 1.</p>
+        <p>Ohne schriftliche Genehmigung darfst du das Spiel nicht kopieren, verändern, verbreiten, verkaufen, vermieten, dekompilieren, disassemblieren oder per Reverse Engineering untersuchen, weder Grafiken, Audio, Texte oder Code daraus extrahieren oder wiederverwenden noch abgeleitete Werke erstellen.</p>
+      </section>
+      <section>
+        <p class="eyebrow">3 · Konto, Spielername und Bestenlisten</p>
+        <h2>Dein Profil</h2>
+        <p>Das Spiel verwendet ein automatisch erstelltes anonymes Konto. Der von dir gewählte Spielername und dein höchstes Level sind für andere Spieler sichtbar. Verwende keine beleidigenden oder rechtswidrigen Spielernamen und keine Namen, die Rechte Dritter verletzen, persönliche Daten enthalten oder andere Personen oder den Entwickler nachahmen. Der Entwickler kann nach eigenem Ermessen Spielernamen, Ergebnisse und Platzierungen ändern oder entfernen, die gegen diese Bedingungen verstoßen oder unregelmäßig zustande gekommen sind.</p>
+      </section>
+      <section>
+        <p class="eyebrow">4 · Challenge und Preise</p>
+        <h2>Regeln der Challenge</h2>
+        <p>Die Challenge gruppiert Spieler ähnlichen Levels für einen bestimmten Zeitraum; die Preise bestehen ausschließlich aus Spielmünzen ohne Geldwert. Regeln, Dauer und Preise können sich ändern, und die Challenge kann jederzeit ausgesetzt oder beendet werden. Ergebnisse, die durch Cheats, Exploits oder Manipulationen erzielt wurden, können annulliert und die zugehörigen Preise entzogen werden.</p>
+      </section>
+      <section>
+        <p class="eyebrow">5 · Verbotenes Verhalten</p>
+        <h2>Was du nicht tun darfst</h2>
+        <ul>
+          <li>Cheats, Bots, Modifikationen oder Tools verwenden, die das Spiel oder seine Daten verändern;</li>
+          <li>Fehler des Spiels absichtlich zum eigenen Vorteil ausnutzen;</li>
+          <li>versuchen, die Bestenliste oder die Gruppeneinteilung der Spieler in der Challenge (Matchmaking) zu manipulieren;</li>
+          <li>ohne Genehmigung auf Server, fremde Konten oder Daten des Dienstes zugreifen oder dies versuchen oder sie überlasten;</li>
+          <li>die technischen Schutzmaßnahmen des Spiels umgehen;</li>
+          <li>das Spiel für rechtswidrige Zwecke oder nicht genehmigte kommerzielle Tätigkeiten nutzen;</li>
+          <li>jedes andere Verhalten, das den oben genannten ähnelt oder – nach vernünftigem Ermessen des Entwicklers – geeignet ist, die Integrität des Spiels, die Sicherheit des Dienstes oder das Erlebnis anderer Spieler zu beeinträchtigen, auch wenn es in diesen Bedingungen nicht ausdrücklich vorgesehen ist.</li>
+        </ul>
+        <p>Bei einem Verstoß können wir das Konto ohne Vorankündigung sperren oder löschen, unbeschadet deiner gesetzlichen Rechte.</p>
+      </section>
+      <section>
+        <p class="eyebrow">6 · Münzen, Leben und Käufe</p>
+        <h2>Virtuelle Gegenstände</h2>
+        <p>Münzen, Leben, Fahrzeuge, Zubehör und Waffen sind virtuelle Gegenstände des Spiels: Sie haben keinen realen Wert und sind weder in Geld umtauschbar noch übertragbar. Virtuelle Gegenstände gehören nicht dem Nutzer: Dir wird nur das Recht eingeräumt, sie im Spiel zu nutzen. Optionale Käufe (Münzpakete, Entfernen der Werbung, Unterstützung des Entwicklers) werden über Google Play abgewickelt und unterliegen dessen Bedingungen und Rückerstattungsrichtlinien: Rückerstattung und Widerruf sind bei Google zu beantragen, unbeschadet der zwingenden Verbraucherrechte. Wenn du das Konto oder das Spiel löschst, kannst du Münzen und noch nicht mit der Cloud synchronisierten Fortschritt verlieren.</p>
+      </section>
+      <section>
+        <p class="eyebrow">7 · Werbung</p>
+        <h2>Anzeigen</h2>
+        <p>Das Spiel zeigt Werbung über Google AdMob; einige Videoanzeigen sind optional und bringen eine Belohnung. Du kannst die Anzeigen durch den entsprechenden Kauf entfernen. Die Verfügbarkeit und die Art der Anzeigen können je nach Land und Geräteeinstellungen variieren. Wir sind nicht verantwortlich für die Inhalte der Werbetreibenden oder der Websites und Apps, auf die sie verweisen. Einzelheiten stehen in der Datenschutzerklärung.</p>
+      </section>
+      <section>
+        <p class="eyebrow">8 · Verfügbarkeit des Dienstes</p>
+        <h2>Das Spiel „wie besehen“</h2>
+        <p>Das Spiel wird „wie besehen“ und „wie verfügbar“ bereitgestellt. Wir können es ganz oder teilweise aktualisieren, ändern oder einstellen. Wir garantieren weder die dauerhafte Verfügbarkeit der Online-Funktionen (Bestenliste, Challenge, Synchronisierung) noch die Fehlerfreiheit oder die Erhaltung der in der Cloud gespeicherten Daten.</p>
+      </section>
+      <section>
+        <p class="eyebrow">9 · Haftungsbeschränkung</p>
+        <h2>Im gesetzlichen Rahmen</h2>
+        <p>Im gesetzlich zulässigen Rahmen haftet der Entwickler nicht für indirekte oder Folgeschäden und nicht für den Verlust von Daten oder virtuellen Gegenständen, der sich aus der Nutzung oder der Unmöglichkeit der Nutzung des Spiels ergibt. Nichts in diesen Bedingungen schließt eine Haftung aus oder beschränkt sie, die nach dem Gesetz nicht ausgeschlossen werden kann (zum Beispiel bei Vorsatz oder grober Fahrlässigkeit), und auch nicht die zwingenden Rechte der Verbraucher.</p>
+      </section>
+      <section>
+        <p class="eyebrow">10 · Drittkomponenten</p>
+        <h2>Externe Software und Dienste</h2>
+        <p>Das Spiel nutzt Software und Dienste Dritter (zum Beispiel die Spiel-Engine Godot Engine, Google AdMob, Google Play und Supabase), die den jeweiligen Lizenzen und Bedingungen unterliegen, welche bei den jeweiligen Rechteinhabern verbleiben.</p>
+      </section>
+      <section>
+        <p class="eyebrow">11 · Meldungen und Feedback</p>
+        <h2>Beiträge und Missbrauch</h2>
+        <p>Wenn du der Meinung bist, dass ein Inhalt des Spiels ein Recht von dir verletzt, oder wenn du ein Problem oder einen Missbrauch melden möchtest, schreibe an den Kontakt am Ende der Seite. Wenn du uns Ideen oder Vorschläge schickst, erlaubst du uns, sie frei und ohne Vergütung zu verwenden.</p>
+      </section>
+      <section>
+        <p class="eyebrow">12 · Minderjährige</p>
+        <h2>Alter</h2>
+        <p>Das Spiel richtet sich nicht an Kinder unter 13 Jahren. Wenn du minderjährig bist, nutze das Spiel mit Zustimmung eines Elternteils oder Erziehungsberechtigten, insbesondere bei Käufen.</p>
+      </section>
+      <section>
+        <p class="eyebrow">13 · Beendigung und Löschung</p>
+        <h2>Die Nutzung des Spiels beenden</h2>
+        <p>Du kannst die Nutzung des Spiels jederzeit beenden und die Löschung deiner Daten über die dafür vorgesehene Seite beantragen. Die Löschung der Daten erfolgt gemäß der Datenschutzerklärung, einschließlich Fristen und Verfahren.</p>
+      </section>
+      <section>
+        <p class="eyebrow">14 · Anwendbares Recht</p>
+        <h2>Gerichtsstand</h2>
+        <p>Diese Bedingungen unterliegen italienischem Recht. Für Streitigkeiten mit Verbrauchern bleiben die zwingenden gesetzlichen Schutzvorschriften und die zwingende örtliche Zuständigkeit unberührt (Gericht am Wohnsitz oder gewöhnlichen Aufenthaltsort des Verbrauchers); in den übrigen Fällen ist das Gericht Sulmona (AQ), Italien, zuständig.</p>
+      </section>
+      <section>
+        <p class="eyebrow">15 · Änderungen</p>
+        <h2>Aktualisierung der Bedingungen</h2>
+        <p>Wir können diese Bedingungen ändern: Das Datum oben zeigt die neueste Fassung an, und wesentliche Änderungen werden im Spiel oder hier bekanntgegeben. Wenn du das Spiel nach einer Änderung weiter nutzt, akzeptierst du sie.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Kontakt</b></p>
+          <p style="margin:0">Für Fragen zu den Bedingungen oder für Meldungen: <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Datenschutzerklärung</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div data-block="fr" hidden>
+      <section>
+        <p class="lead">Ces conditions régissent l’utilisation du jeu <b>Chop &amp; Run: Zombie Road</b> (« le Jeu »), développé par Giovanni Luca Tucceri (« le Développeur »). En téléchargeant, installant ou utilisant le Jeu, tu acceptes ces conditions ; si tu ne les acceptes pas, n’utilise pas le Jeu. Lis aussi la Politique de confidentialité.</p>
+      </section>
+      <section>
+        <p class="eyebrow">1 · Licence d’utilisation</p>
+        <h2>Ce que tu peux faire</h2>
+        <p>Nous t’accordons une licence personnelle, non exclusive, non transférable et révocable pour installer et utiliser le Jeu sur tes appareils Android, pour un usage personnel et non commercial et conformément à ces conditions. Le Jeu t’est concédé sous licence, non vendu.</p>
+      </section>
+      <section>
+        <p class="eyebrow">2 · Droits d’auteur</p>
+        <h2>Propriété intellectuelle</h2>
+        <p>Le Jeu et tous ses contenus — code, graphismes, animations, musiques, effets sonores, textes, histoire, noms et logos — sont l’œuvre du Développeur ou utilisés sous licence et sont protégés par le droit d’auteur et les autres règles de propriété intellectuelle. © 2026 Giovanni Luca Tucceri. Tous droits réservés. Aucun droit ne t’est transféré, sauf la licence du point 1.</p>
+        <p>Sans autorisation écrite, tu ne peux pas copier, modifier, distribuer, vendre, louer, décompiler, désassembler ou pratiquer le reverse engineering du Jeu, ni extraire ou réutiliser graphismes, audio, textes ou code, ni créer des œuvres dérivées.</p>
+      </section>
+      <section>
+        <p class="eyebrow">3 · Compte, pseudonyme et classements</p>
+        <h2>Ton profil</h2>
+        <p>Le Jeu utilise un compte anonyme créé automatiquement. Le pseudonyme que tu choisis et ton niveau maximal sont visibles par les autres joueurs. N’utilise pas de pseudonymes offensants, illégaux, portant atteinte aux droits d’autrui, contenant des données personnelles ou imitant d’autres personnes ou le Développeur. Le Développeur peut, à sa discrétion, modifier ou supprimer pseudonymes, résultats ou positions dans le classement qui violent ces conditions ou semblent obtenus de manière irrégulière.</p>
+      </section>
+      <section>
+        <p class="eyebrow">4 · Défi et récompenses</p>
+        <h2>Règles du Défi</h2>
+        <p>Le Défi regroupe des joueurs de niveau similaire pour une période donnée ; les récompenses sont uniquement des pièces du jeu, sans valeur monétaire. Règles, durée et récompenses peuvent changer, et le Défi peut être suspendu ou interrompu à tout moment. Les résultats obtenus via cheats, exploits ou manipulations peuvent être annulés et les récompenses retirées.</p>
+      </section>
+      <section>
+        <p class="eyebrow">5 · Comportements interdits</p>
+        <h2>Ce que tu ne peux pas faire</h2>
+        <ul>
+          <li>utiliser des cheats, bots, modifications ou outils qui altèrent le Jeu ou ses données ;</li>
+          <li>exploiter volontairement des erreurs du Jeu à ton avantage ;</li>
+          <li>tenter de manipuler le classement ou le regroupement des joueurs dans le Défi (matchmaking) ;</li>
+          <li>accéder ou tenter d’accéder sans autorisation aux serveurs, comptes d’autres joueurs ou données du service, ou les surcharger ;</li>
+          <li>contourner les mesures techniques de protection du Jeu ;</li>
+          <li>utiliser le Jeu à des fins illicites ou pour des activités commerciales non autorisées ;</li>
+          <li>tout autre comportement similaire à ceux ci-dessus ou susceptible, selon le jugement raisonnable du Développeur, de compromettre l’intégrité du Jeu, la sécurité du service ou l’expérience des autres joueurs, même s’il n’est pas expressément prévu dans ces conditions.</li>
+        </ul>
+        <p>En cas de violation, nous pouvons suspendre ou supprimer le compte sans préavis, sans préjudice de tes droits légaux.</p>
+      </section>
+      <section>
+        <p class="eyebrow">6 · Pièces, vies et achats</p>
+        <h2>Objets virtuels</h2>
+        <p>Les pièces, vies, véhicules, accessoires et armes sont des objets virtuels du Jeu : ils n’ont pas de valeur réelle, ne sont pas convertibles en argent et ne sont pas transférables. Les objets virtuels ne sont pas la propriété de l’utilisateur : tu obtiens uniquement le droit de les utiliser dans le Jeu. Les achats facultatifs (packs de pièces, suppression de la publicité, soutien au développeur) sont gérés par Google Play et soumis à ses conditions et à sa politique de remboursement : remboursements et rétractation doivent être demandés à Google, sans préjudice des droits impératifs des consommateurs. Si tu supprimes le compte ou le Jeu, tu peux perdre pièces et progression non encore synchronisées dans le cloud.</p>
+      </section>
+      <section>
+        <p class="eyebrow">7 · Publicité</p>
+        <h2>Annonces</h2>
+        <p>Le Jeu affiche des annonces via Google AdMob ; certaines annonces vidéo sont facultatives et offrent une récompense. Tu peux supprimer les annonces via l’achat dédié. Disponibilité et type d’annonces peuvent varier selon le pays et les paramètres de l’appareil. Nous ne sommes pas responsables du contenu des annonceurs ni des sites ou apps vers lesquels ils renvoient. Les détails sont dans la Politique de confidentialité.</p>
+      </section>
+      <section>
+        <p class="eyebrow">8 · Disponibilité du service</p>
+        <h2>Le Jeu « tel quel »</h2>
+        <p>Le Jeu est fourni « tel quel » et « selon disponibilité ». Nous pouvons le mettre à jour, le modifier ou l’interrompre, en tout ou en partie. Nous ne garantissons pas la disponibilité continue des fonctionnalités en ligne (classement, Défi, synchronisation), l’absence d’erreurs ni la conservation des données enregistrées dans le cloud.</p>
+      </section>
+      <section>
+        <p class="eyebrow">9 · Limitation de responsabilité</p>
+        <h2>Dans les limites de la loi</h2>
+        <p>Dans les limites autorisées par la loi, le Développeur n’est pas responsable des dommages indirects ou consécutifs, ni de la perte de données ou d’objets virtuels résultant de l’utilisation ou de l’impossibilité d’utiliser le Jeu. Rien dans ces conditions n’exclut ou ne limite la responsabilité qui ne peut être exclue par la loi (par exemple en cas de fraude ou de faute grave), ni les droits impératifs des consommateurs.</p>
+      </section>
+      <section>
+        <p class="eyebrow">10 · Composants tiers</p>
+        <h2>Logiciels et services externes</h2>
+        <p>Le Jeu utilise des logiciels et services tiers (par exemple le moteur Godot Engine, Google AdMob, Google Play et Supabase), régis par leurs licences et conditions respectives, qui restent la propriété de leurs titulaires.</p>
+      </section>
+      <section>
+        <p class="eyebrow">11 · Signalements et retours</p>
+        <h2>Contributions et abus</h2>
+        <p>Si tu estimes qu’un contenu du Jeu porte atteinte à tes droits, ou si tu veux signaler un problème ou un abus, écris au contact en bas de la page. Si tu nous envoies des idées ou suggestions, tu nous autorises à les utiliser librement et sans compensation.</p>
+      </section>
+      <section>
+        <p class="eyebrow">12 · Mineurs</p>
+        <h2>Âge</h2>
+        <p>Le Jeu n’est pas destiné aux moins de 13 ans. Si tu es mineur, utilise le Jeu avec le consentement d’un parent ou tuteur, en particulier pour les achats.</p>
+      </section>
+      <section>
+        <p class="eyebrow">13 · Cessation et suppression</p>
+        <h2>Arrêter d’utiliser le Jeu</h2>
+        <p>Tu peux arrêter d’utiliser le Jeu à tout moment et demander la suppression de tes données via la page dédiée. La suppression des données s’effectue conformément à la Politique de confidentialité, y compris délais et modalités.</p>
+      </section>
+      <section>
+        <p class="eyebrow">14 · Loi applicable</p>
+        <h2>Tribunal compétent</h2>
+        <p>Ces conditions sont régies par le droit italien. Pour les litiges impliquant des consommateurs, les protections et la compétence territoriale impératives prévues par la loi restent applicables (tribunal du lieu de résidence ou domicile du consommateur) ; dans les autres cas, le tribunal compétent est le Tribunal de Sulmona (AQ), Italie.</p>
+      </section>
+      <section>
+        <p class="eyebrow">15 · Modifications</p>
+        <h2>Mises à jour des conditions</h2>
+        <p>Nous pouvons modifier ces conditions : la date en haut indique la dernière version et les modifications importantes seront signalées dans le Jeu ou ici. Si tu continues à utiliser le Jeu après une modification, tu l’acceptes.</p>
+      </section>
+      <section>
+        <div class="box">
+          <p style="margin:0 0 4px"><b>Contacts</b></p>
+          <p style="margin:0">Pour toute question sur les conditions ou pour des signalements : <a href="mailto:gltucceri@gmail.com">gltucceri@gmail.com</a></p>
+          <p class="backlink" style="margin:12px 0 0"><a href="privacy.html" data-backlink>← Politique de confidentialité</a></p>
+        </div>
+      </section>
+    </div>
+
+    <footer data-i18n="footer">© 2026 Giovanni Luca Tucceri. Tutti i diritti riservati. · Chop &amp; Run: Zombie Road · gltucceri@gmail.com</footer>
+  </main>
+</div>
+<script>
+  (function(){
+    var LANGS = ['it', 'en', 'es', 'pt', 'de', 'fr'];
+    var T = {
+      it:{title:'Termini del servizio', sub:'Le regole per usare il gioco.', effective:'In vigore dal:', date:'3 ottobre 2026', app:'App: Chop &amp; Run: Zombie Road (Android)', footer:'© 2026 Giovanni Luca Tucceri. Tutti i diritti riservati. · Chop &amp; Run: Zombie Road · gltucceri@gmail.com'},
+      en:{title:'Terms of service', sub:'The rules for using the game.', effective:'Effective from:', date:'October 3, 2026', app:'App: Chop &amp; Run: Zombie Road (Android)', footer:'© 2026 Giovanni Luca Tucceri. All rights reserved. · Chop &amp; Run: Zombie Road · gltucceri@gmail.com'},
+      es:{title:'Términos del servicio', sub:'Las reglas para usar el juego.', effective:'En vigor desde:', date:'3 de octubre de 2026', app:'App: Chop &amp; Run: Zombie Road (Android)', footer:'© 2026 Giovanni Luca Tucceri. Todos los derechos reservados. · Chop &amp; Run: Zombie Road · gltucceri@gmail.com'},
+      pt:{title:'Termos de serviço', sub:'As regras para usar o jogo.', effective:'Em vigor desde:', date:'3 de outubro de 2026', app:'App: Chop &amp; Run: Zombie Road (Android)', footer:'© 2026 Giovanni Luca Tucceri. Todos os direitos reservados. · Chop &amp; Run: Zombie Road · gltucceri@gmail.com'},
+      de:{title:'Nutzungsbedingungen', sub:'Die Regeln für die Nutzung des Spiels.', effective:'Gültig ab:', date:'3. Oktober 2026', app:'App: Chop &amp; Run: Zombie Road (Android)', footer:'© 2026 Giovanni Luca Tucceri. Alle Rechte vorbehalten. · Chop &amp; Run: Zombie Road · gltucceri@gmail.com'},
+      fr:{title:'Conditions de service', sub:'Les règles pour utiliser le jeu.', effective:'En vigueur depuis :', date:'3 octobre 2026', app:'App : Chop &amp; Run: Zombie Road (Android)', footer:'© 2026 Giovanni Luca Tucceri. Tous droits réservés. · Chop &amp; Run: Zombie Road · gltucceri@gmail.com'},
+    };
+    var buttons = document.querySelectorAll('.toggle button');
+    var i18n = document.querySelectorAll('[data-i18n]');
+    var backlinks = document.querySelectorAll('[data-backlink]');
+    function apply(lang){
+      if (LANGS.indexOf(lang) < 0) lang = 'it';
+      LANGS.forEach(function(l){
+        var b = document.querySelector('[data-block="' + l + '"]');
+        if (b) b.hidden = (l !== lang);
+      });
+      i18n.forEach(function(el){ el.innerHTML = T[lang][el.getAttribute('data-i18n')]; });
+      backlinks.forEach(function(a){ a.setAttribute('href', 'privacy.html?lang=' + lang); });
+      buttons.forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+      document.documentElement.lang = lang;
+      try{ localStorage.setItem('choprun_privacy_lang', lang); }catch(e){}
+    }
+    buttons.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.lang); }); });
+    var lang = '';
+    var m = /[?&]lang=([a-z]{2})/.exec(location.search);
+    if (m) lang = m[1];
+    if (!lang) { try{ lang = localStorage.getItem('choprun_privacy_lang') || ''; }catch(e){} }
+    if (!lang) { lang = (navigator.language || 'it').slice(0, 2).toLowerCase(); }
+    apply(lang);
+  })();
+</script>
